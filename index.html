@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration   form</title>
+    <style>
+        input,select,button{
+            width: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            color: #333;
+        }  
+        img{
+            width: 100%;
+        } 
+        .wrapper{
+            min-height:100vh;
+            display:flex;
+            align-items: center;
+            justify-content:center ;
+        }
+        .inner{
+            padding: 20px;
+            margin:auto;
+            display:flex;
+        }
+        .inner .imgsi{
+            width: 50%;
+        }
+        .inner form{
+            width:50%;
+            margin-top:-2%;
+            padding-left: 45px;
+            padding-right: 45px;
+
+        }
+        .form-group{
+            display: flex;
+        }
+        .form-group input:first-child{
+        margin-right: 25px; 
+        }
+        .form-control{
+            position: relative;
+        }
+        .form-control i {
+            position: absolute;
+            bottom: 9px;
+            right: 0;
+         }
+        .form-wrapper{
+            border:1px solid black;
+            border:none;
+            border-bottom: 1px solid black;
+            display: block;
+            width: 100%;
+            height:30px;
+            padding-right: 0;
+            margin-bottom:25px;
+        }
+         button {
+            border: none;
+            width: 164px;
+            height: 51px;
+            margin: auto;
+            margin-top: 40px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+            background: #333;
+            font-size: 15px;
+            color: #fff;
+            
+        }
+        button:hover{
+            background: or;
+        }
+        .inner h3 {
+        text-transform: uppercase;
+        font-size: 25px;
+        text-align: center;
+        margin-bottom: 28px; 
+        }
+    </style>
+</head>
+<body>
+   <div class="wrapper">
+     <div class="inner">
+        <div name="imgsi">
+            <img src="imag.jpeg" alt="">
+        </div>
+            <form action="">
+                <h3>Registartion from</h3>
+                <div class="form-control">
+                    <p><input placeholder="Enter your name" class="form-wrapper"required/></p>
+                </div>
+                <div class="form-control">
+                    <p><input type="email" placeholder="Enter your mail id" class="form-wrapper" required /></p>
+                </div>
+                <div class="form-group">
+                    <p><input type="password" placeholder="Enter your password" class="form-wrapper" required/></p>
+                    <p><input type="password" placeholder="confirm password" class="form-wrapper" required/></p>
+                </div>
+                <div class="form-control">
+                        <select name="gender" class="form-wrapper">
+                            <option value="male">male</option>
+                            <option value="female">female</option>
+                        </select>
+                </div>
+                <button><a href="login.html">submit</a></button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
